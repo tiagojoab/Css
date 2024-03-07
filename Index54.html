@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tiago</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+
+    <section>
+        <img src="Img/1.png" data-speed="4" class="layer" />
+        <img src="Img/2.png" data-speed="-2"  class="layer" />
+        <img src="Img/3.png" data-speed="-5"  class="layer" />
+        <img src="Img/4.png" data-speed="3"  class="layer" />
+        <img src="Img/5.png" data-speed="-1"  class="layer" />
+        <img src="Img/6.png" data-speed="2"  class="layer" />
+        <img src="Img/7.png" data-speed="-3"  class="layer" />
+        <img src="Img/8.png" data-speed="6"  class="layer" />
+        <img src="Img/9.png" data-speed="5"  class="layer" />
+        <img src="Img/10.png" data-speed="-4"  class="layer" />
+        <img src="Img/12.png" data-speed="5"  class="layer" />
+      <h2>Tiago</h2>
+
+    </section>
+    <script type="text/javascript" >
+        const speeds = [];
+        function rand(min, max) {
+            return.Match.floor(Match.random() * (max - min + 1)) + min;
+        }
+        function moveObject(e) {  
+            console.log('***moveObject mouse' , e.pageX, e.pagey);
+            console.log('***moveObject window' , window.innerWidth, window.innerHeight);
+
+            this.querySelectorAll('layer').forEach(layers, index) == {
+                speeds[index] = speed[index] || rand(-6, 6) || layer.dataset.speed;       
+           const x = (window.innerWidth - e.pageX * speeds[index]) / 100;
+           const y = (window.innerHeight - e.pagey * speeds[index]) / 100;
+           layer.style.transform = 'translateX(${x}px) translateY(${y}px)';
+           console.log('*** moveObject rand', rand(-6, 6));
+            });
+            
+        }
+
+document.addEventListener('mousemove' , moveObject);
+    </script> 
+</body>
+</html>

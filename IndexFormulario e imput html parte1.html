@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">   
+        <p> O meu formulário </p>
+        <p>
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome"
+             placeholder="Seu nome">
+        </p>
+            <p>
+                <label for="dev">Sou um dev:</label>
+                <input type="checkbox" id="dev" name="dev"
+                 value="sim">
+        </p> 
+        <p> 
+        <label for="dev1">Sou um dev1:</label>
+        <input type="checkbox" id="dev1" name="dev1"
+         value="sim"><br>
+        <label for="dev">Sou um dev2:</label>
+         <input type="checkbox" id="dev2" name="dev2"
+          value="sim" checked><br>
+          <label for="dev">Sou um dev3:</label>
+          <input type="checkbox" id="dev3" name="dev3"
+           value="sim">  
+        </p> 
+        <p> 
+            Gênero:<br>
+            <label for="feminino">feminino</label>
+            <input type="radio" id="feminino" name="genero"
+             value="feminino"><br>
+            <label for="masculio">masculino</label>
+             <input type="radio" id="masculino" name="genero"
+              value="masculino" checked><br>
+              <label for="outro_outra">outro ou outra</label>
+              <input type="radio" id="outro_outra" name="genero"
+               value="outro_outra">  
+            </p> 
+
+            <p>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date"
+                 value="2020-04-60">
+            </p>
+            <p>
+                <label for="Datetime">Date</label>
+                <input type="datetime-local" id="nome" name="datetime"
+                 value="2020-04-20T20:00">
+            </p>
+            <p>
+                <label for="time">Date</label>
+                <input type="time" id="time" name="time"
+                 value="20:00:01">
+            </p>
+            <p>
+                <label for="Cor">Cor preferida:</label>
+                <input type="color" id="cor" name="cor"
+                 value="#FF0000">
+            </p>
+            <p>
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" name="file"
+                placeholder="ex.:email@email.com">
+            </p>
+            <p>
+                <label for="file">Sua foto:</label>
+                <input type="file" id="file" name="file"
+                 accept=".png,.svg,image/*" multiple>
+            </p>
+            <p>
+                <label for="Number">Number:</label>
+                <input type="Number" id="file" name="number"
+                min="10" max="50" step="5">
+            </p>
+            <p>
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" name="file"
+                placeholder="ex.:email@email.com">
+            </p>
+
+    
+        <p>
+            <label for="password">Dgite Sua senha:</label>
+            <input type="password" id="password" name="password"
+            placeholder="Digite sua senha">
+        </p>
+        <p>
+            <label for="range">range:</label>
+            <input type="range" id="range" name="range"
+            list="tickmarks"
+            >
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="50%">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90"> 
+                <option value="100" label="100%">           
+            </datalist> 
+        </p>
+        
+        <p>
+            <label for="url"> Sua url:</label>
+            <input type="url" id="url" name="url"
+            placeholder="URL">
+        </p>
+         
+        <p>
+            <label for="search"> Sua url:</label>
+            <input type="search" id="search" name="search"
+            placeholder="search">
+        </p>
+        <p>
+            <label for="select">Selecione alguma opção:</
+                label>
+            <select id="select" name="select">
+                <optgroup label="este">
+                <option value="qualquer 1" label="label 1">
+                <option value="qualquer 2" label="label 2"
+                disabled>
+                <option value="qualquer 3" label="label 3"
+                selected>
+                <option value="qualquer 4" label="label 4">
+                </optgroup>
+                </select>
+        </p>
+        <p>
+            <label for="textarea">textarea:</label>
+            <textarea name="textarea" id="textarea" rows="3" cols="9">
+                Mas se a gente colocar
+            </textarea>
+ 
+
+        </p>
+        <p>
+            <button type="reset">reset</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>   
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+.Pai {
+    height: 300vh;
+}
+
+.Filha1, .Filha2 {
+    width: 300px;
+    height: 300px;
+    background-color:rgba(225, 0, 0, 1);
+    margin: 10px;
+    position: static;
+
+}
+ .Filha2 {
+    background: greenyellow;
+    float: left;
+ }
+
+ .Filha1 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 100px;
+    right: 50px;
+ }

@@ -1,0 +1,21 @@
+<script>
+    // verifica se objeto tem propriedade 
+// item. hasOwnproprieda verifica a propriedade de um objeto
+
+    const items = {
+        fruit: 'Laranja',
+        car: 'fusca',
+        instrument: 'violão',
+    };
+
+    function check(prop) {
+        if (items.hasOwnproperty(prop)) {
+            return items[prop];
+        }else {
+            return null;
+        }
+    }
+
+
+    console.log(check['band']);
+</script>
